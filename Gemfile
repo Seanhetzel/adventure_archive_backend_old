@@ -3,7 +3,12 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.6.1'
 
+# to serialize:
 gem 'active_model_serializers'
+
+# to get API data from wiki:
+require 'nokogiri'
+require 'open-uri'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.2.3'
